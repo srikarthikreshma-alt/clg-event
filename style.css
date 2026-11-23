@@ -1,0 +1,55 @@
+:root{--bg:#090914;--panel:#151528;--text:#f7f4ff;--muted:#b8b4ca;--pink:#ff4f9a;--orange:#ff9b54;--purple:#9b7bff}
+    *{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth}
+    body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+    a{color:inherit;text-decoration:none}
+    .container{width:min(1120px,90%);margin:auto}
+    header{position:absolute;top:0;left:0;width:100%;z-index:5;padding:22px 0}
+    nav{display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .logo{font:700 1.35rem 'Space Grotesk';letter-spacing:1px}.logo span{color:var(--pink)}
+    .nav-links{display:flex;gap:27px;color:#e0dced;font-size:.92rem}
+    .nav-links a:hover{color:var(--pink)}
+    .nav-cta,.btn{display:inline-block;padding:12px 20px;border-radius:999px;font-weight:700;background:linear-gradient(100deg,var(--pink),var(--orange));color:#160c1c;border:0;cursor:pointer}
+    .hero{min-height:720px;display:flex;align-items:center;position:relative;overflow:hidden;background:radial-gradient(ellipse at 78% 42%,#54216d 0,transparent 34%),radial-gradient(ellipse at 15% 80%,#30205c 0,transparent 34%),linear-gradient(120deg,#0b0a1b,#17102b 58%,#0b0a18)}
+    .hero:before,.hero:after{content:"";position:absolute;border:1px solid #ffffff20;border-radius:50%;width:470px;height:470px;right:4%;top:16%;transform:rotate(-25deg);box-shadow:0 0 80px #d94d9a25}
+    .hero:after{width:350px;height:350px;right:8%;top:24%;border-color:#ff9b5450}
+    .hero-content{position:relative;z-index:1;padding:130px 0 80px;max-width:720px}
+    .eyebrow{color:#ffb0d0;text-transform:uppercase;letter-spacing:3px;font-size:.78rem;font-weight:700}
+    h1{font:700 clamp(3.6rem,9vw,7.5rem)/.94 'Space Grotesk';letter-spacing:-5px;margin:20px 0}
+    h1 span{background:linear-gradient(90deg,#ff5aa4,#ffb35d);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .hero p{max-width:550px;color:#d2cce2;font-size:1.08rem;margin-bottom:28px}
+    .hero-meta{display:flex;gap:25px;flex-wrap:wrap;margin:30px 0;color:#f0eaf8}
+    .hero-meta strong{display:block;color:white;font-size:1rem}.hero-meta small{color:#bdb5d0}
+    .section{padding:90px 0}.section-kicker{color:var(--pink);font-size:.78rem;font-weight:700;letter-spacing:2px;text-transform:uppercase}
+    h2{font:700 clamp(2.1rem,5vw,3.5rem)/1.1 'Space Grotesk';margin:10px 0 15px}
+    .intro{color:var(--muted);max-width:650px}
+    .about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}
+    .poster{min-height:350px;border-radius:25px;padding:35px;display:flex;flex-direction:column;justify-content:space-between;background:linear-gradient(145deg,#ff4f9a,#8a55e8 58%,#ff9b54);color:#160d24;box-shadow:0 25px 70px #a347a533}
+    .poster .big{font:700 4rem/.9 'Space Grotesk';letter-spacing:-3px}.poster .stamp{font-size:.8rem;letter-spacing:2px;font-weight:700}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:35px}
+    .card{background:var(--panel);border:1px solid #ffffff12;border-radius:18px;padding:25px}
+    .card .icon{font-size:1.8rem;margin-bottom:13px}.card h3{font:600 1.2rem 'Space Grotesk';margin-bottom:8px}.card p{color:var(--muted);font-size:.94rem}
+    .schedule{background:#100f20}
+    .timeline{margin-top:35px;border-top:1px solid #ffffff20}
+    .event-row{display:grid;grid-template-columns:150px 1fr auto;gap:25px;align-items:center;padding:23px 10px;border-bottom:1px solid #ffffff20}
+    .time{color:#ff9bc5;font-weight:700}.event-row h3{font:600 1.1rem 'Space Grotesk'}.event-row p{color:var(--muted);font-size:.9rem}
+    .tag{font-size:.75rem;color:#ffd1e5;border:1px solid #ff6ba4aa;padding:5px 10px;border-radius:99px}
+    .performers{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:35px}
+    .performer{min-height:245px;border-radius:20px;padding:22px;display:flex;flex-direction:column;justify-content:end;overflow:hidden;position:relative;background:linear-gradient(145deg,#34204f,#1b1730)}
+    .performer:nth-child(2){background:linear-gradient(145deg,#673050,#24172e)}.performer:nth-child(3){background:linear-gradient(145deg,#29466a,#171a32)}
+    .performer:before{content:"";position:absolute;width:190px;height:190px;border-radius:50%;background:#ffffff13;top:-65px;right:-40px}
+    .performer .emoji{font-size:3.5rem;position:absolute;top:28px;left:25px}.performer h3{font:600 1.35rem 'Space Grotesk';position:relative}.performer p{color:#d2cce2;position:relative;font-size:.9rem}
+    .venue-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px;margin-top:30px}
+    .venue-box{padding:30px;background:var(--panel);border-radius:20px;border:1px solid #ffffff12}
+    .venue-box p{color:var(--muted);margin:8px 0 18px}
+    .map-placeholder{min-height:220px;border-radius:20px;background:linear-gradient(135deg,#292044,#19172e);display:grid;place-items:center;text-align:center;color:#d8c9ef;padding:20px}
+    .register{background:linear-gradient(120deg,#281438,#17112a 65%,#26152c)}
+    .register-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:45px;align-items:start}
+    form{background:#0f0e1d;padding:30px;border:1px solid #ffffff18;border-radius:20px}
+    label{display:block;font-size:.86rem;margin:14px 0 6px;color:#e6e0ef}
+    input,select,textarea{width:100%;padding:13px 14px;border-radius:10px;border:1px solid #ffffff25;background:#1b1a2d;color:white;font:inherit;outline:none}
+    input:focus,select:focus,textarea:focus{border-color:var(--pink)}
+    textarea{resize:vertical;min-height:90px}
+    form .btn{width:100%;margin-top:20px;font:700 1rem 'DM Sans'}
+    #formMessage{margin-top:14px;color:#9ff0c2;font-size:.9rem;display:none}
+    footer{padding:28px 0;color:#9d97b0;border-top:1px solid #ffffff15;text-align:center;font-size:.85rem}
+    @media(max-width:760px){.nav-links{display:none}.hero{min-height:680px}.hero:before,.hero:after{right:-240px;opacity:.5}.about-grid,.venue-grid,.register-grid{grid-template-columns:1fr}.cards,.performers{grid-template-columns:1fr}.event-row{grid-template-columns:1fr;gap:7px}.event-row .tag{width:max-content}.section{padding:70px 0}h1{letter-spacing:-3px}.poster{min-height:280px}}
